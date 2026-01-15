@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta name="generator"
+        content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css" />
+    <link rel="stylesheet" type="text/css" href="ISED_Help.css" />
+    <script
+	  src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <title>PSS&regDE: SAG/SE manual appendix</title>
+</head>
+
+<body>
+    <p class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0 title ">
+        <span class="col-md-2 col-sm-3 navbar-brand" style="padding-left:20px"> PSS<sup>&reg</sup>DE: SAG/SE manual appendix
+        </span>
+        <span class="form-control form-control-dark" align="center"
+            style="width:4%;color: #c6c6c6;padding:20px">V3.5.0.0</span>
+    </p>
+    <div class="wrapper">
+        <div
+            class="left box-shadow bg-light col-md-2 d-md-block d-none sidebar sidebar-sticky noindent tableofcontents nav flex-column">
+            <div class="noindent tableofcontents nav flex-column">
+                <span class="chapterToc pt-2 ">
+                    <a href="#x1-20001">1 PSS<sup>&reg</sup>DE - Functionalities for Siemens employees</a>
+                </span>
+                <span class="sectionToc">
+                    <a href="#x1-186000e2" data-toggle="collapse" class="dropdown-toggle" aria-expanded="true"
+                        role="button" aria-controls="x1-186000e2">Import</a>
+                </span>
+                <ul class="list-unstyled collapse subsectionToc" id="x1-186000e2">
+                    <!--<li class="subsectionToc">
+                        <a href="#x1-130001">From DEOP</a>
+                    </li>-->
+                    <li class="subsectionToc">
+                        <a href="#x1-120001">From PV</a>
+                    </li>                  
+					<li class="subsectionToc">
+                        <a href="#x1-130003">From Decarbonization Study (json)</a>
+                    </li>
+                </ul>
+				
+				
+                <span class="sectionToc">
+                    <a href="#x1-186000el" data-toggle="collapse" class="dropdown-toggle" aria-expanded="true"
+                        role="button" aria-controls="x1-186000el">Hydroelectric</a>
+                </span>
+                <ul class="list-unstyled collapse subsectionToc" id="x1-186000el">
+                    <li class="subsectionToc">
+                        <a href="#x1-TerminologyHydro">Hydroelectric Terminology</a>
+                    </li>                    
+					<li class="subsectionToc">
+                        <a href="#x1-convHydro">Conventional Hydroelectric</a>
+                    </li>
+                    <li class="subsectionToc">
+                        <a href="#x1-pumpHydro">Pumped Hydroelectric</a>
+                    </li>
+                </ul>                			
+                <span class="sectionToc">
+                    <a href="#x1-3300009" data-toggle="collapse" class="dropdown-toggle" aria-expanded="true"
+                        role="button" aria-controls="x1-3300009">Export</a>
+                </span>
+                <ul class="list-unstyled collapse subsectionToc" id="x1-3300009">
+                    <!--<li class="subsectionToc">
+                        <a href="#x1-3330009">To DEOP</a>
+                    </li>-->
+                    <li class="subsectionToc">
+                        <a href="#x1-3330009">To financial tool</a>
+                    </li>
+                    <li class="subsectionToc">
+                        <a href="#x1-3330011">For external tools (json)</a>
+                    </li>
+                </ul>
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+        <div id="realTimeContents" class="right">
+            <h1 class="important_highlight_DO">
+                <a id="x1-20001" name="x1-20001">
+                </a>PSS<sup class="textsuperscript">&reg;</sup>DE - Functionalities for Siemens employees
+            </h1>
+            <div>
+                <hr />
+                <p class="noindent"> PSS<sup class="textsuperscript">&reg;</sup>DE (Power System Simulator for
+                    Distributed Energy) is a tool that Siemens has specifically developed for the sizing and evaluation
+                    of Distributed Energy Systems (DES). Some functionalities of the tool are only available to employees of Siemens AG or Siemens Energy.
+					These functionalities are described in this Help document.</p>
+
+                <div>				
+				
+                <h2 class="sectionHead">
+                    <a id="x1-30001" name="x1-30001">
+                    </a>Import Menu
+                </h2>
+                        <div class="content">
+                            <p class="noindent"> This menu contains the following entries:</p>
+                            <div class="list-group">
+                                <a href="#x1-120001" class="list-group-item list-group-item-action">From PV (PVSyst or
+                                    HelioScope)</a>
+                                <!--<a href="#x1-130001" class="list-group-item list-group-item-action">From DEOP</a>-->
+                                <a href="#x1-130003" class="list-group-item list-group-item-action">For Decarbonization Study (json)</a>
+                            </div>
+                            <p>
+                            </p>
+                            <p class="noindent">
+                                <span class="normal-bold">
+                                    <a id="x1-120001" name="x1-120001"> From PV (PVSyst or HelioScope) </a>
+                                </span>
+                            </p>
+                            <p class="noindent"> Imports a (correctly formatted) PVSyst or HelioScope export with an
+                                (optional) associated Meteonorm file. </p>
+                            <figure class="note-highlight">
+                                <span class="normal-bold">Note:</span> As a guideline, HelioScope is recommended to be
+                                used for pre-qualification, opportunity and non-binding Solar PV simulations. <p>PVsyst
+                                    can be used for all kinds off simulations from pre-qualification up to binding
+                                    guarantees. </p>
+                            </figure>
+                            <p> If the Meteonorm file is not provided, then the PVSyst data is imported as an hourly
+                                time series. If the Meteonorm file is provided, it is assumed that the PVSyst/HelioScope
+                                calculation was carried out on Meteonorm data and the provided Meteonorm file is the
+                                interpolated 1 minute resolution file from the same source. During the import, the
+                                time-series are created and interpolated. </p>
+                            <figure class="note-highlight">
+                                <span class="normal-bold">Note:</span> The imported data is normalized (divided) and
+                                then re-multiplied by the peak power. This allows for easy scaling if different
+                                variations of PV plants are simulated.
+                            </figure>
+                            <p class="noindent"> A PV plant is added to the equipment tab and automatically linked to
+                                the associated time-series. </p>
+                            <div class="figure">
+                                <a id="x1-130058" name="x1-130058">
+                                </a>
+                                <img src="image4.png" />
+                                <div class="caption">PV import dialog</div>
+                            </div>
+                            <!--<p class="noindent">
+                                <span class="normal-bold">
+                                    <a id="x1-130001" name="x1-130001"> From DEOP </a>
+                                </span>
+                            </p>
+                            <p class="noindent">Imports (correctly formatted) .csv files provided by DEOP.</p>
+                            <p class="noindent"> The user has to choose a folder that contains all files that should be
+                                imported. The format of the file must be ".csv". There must be a file per asset. Each
+                                file must contains data (timeseries) for only one asset. The filename must be identical
+                                with the asset name in the .sproject. E.g. "MyPV.csv". The timestep size for the
+                                timeseries must be hourly. </p>
+                            <p class="noindent">During the import the following warnings can occur:</p>
+                            <ul>
+                                <li>
+                                    <p class="normal-bold no_margin">No valid asset found</p>
+                                    <div class="figure">
+                                        <a id="x1-130014" name="x1-130014">
+                                        </a>
+                                        <img src="image101.png" />
+                                        <div class="caption">No valid asset found</div>
+                                    </div>
+                                    <p class="noindent"> If the file name can't be matched to a asset this warning will
+                                        be shown. E.g. if the file name is MyPV.csv but the assets name in the .sproject
+                                        is MyPhotovoltaik the data of the file can not be assigned to this asset.
+                                        Therefore no data will be imported for this specific asset. Since multiple files
+                                        are imported at once, the data for the other files will be still imported if
+                                        there is a match between the file name and the assets name. The warning will
+                                        hint which asset could not be matched. </p>
+                                </li>
+                                <li>
+                                    <p class="normal-bold no_margin">Multiple use of timeseries</p>
+                                    <div class="figure">
+                                        <a id="x1-130025" name="x1-130025">
+                                        </a>
+                                        <img src="image102.png" />
+                                        <div class="caption">Multiple use of timeseries</div>
+                                    </div>
+                                    <p class="noindent"> If in the .sproject a timeseries is assigned to multiple
+                                        assets, e.g. there is a asset "MyPV1" and "MyPV2" that have the same weather
+                                        data timeseries "myTimeseries", the import process will overwrite this data if
+                                        there are different data stored in a file "myPV1.csv" and "myPV2.csv". </p>
+                                </li>
+                                <li>
+                                    <p class="normal-bold no_margin">No timeseries available</p>
+                                    <div class="figure">
+                                        <a id="x1-130036" name="x1-130036">
+                                        </a>
+                                        <img src="image103.png" />
+                                        <div class="caption">No timeseries available</div>
+                                    </div>
+                                    <p class="noindent"> If for a parameter no timeseries has been assigned, the
+                                        importer will display this warning. For each parameter in the data that should
+                                        be imported there must be a timeseries assigned in the .sproject. </p>
+                                </li>
+                                <li>
+                                    <p class="normal-bold no_margin">Wrong timestep size</p>
+                                    <div class="figure">
+                                        <a id="x1-130047" name="x1-130047">
+                                        </a>
+                                        <img src="image104.png" />
+                                        <div class="caption">Wrong timestep size</div>
+                                    </div>
+                                    <p class="noindent"> The timestep size for a timeseries in the .sproject must be set
+                                        to hourly (3600 seconds). If this is not the case the importer will display this
+                                        warning. </p>
+                                </li>
+                            </ul>-->
+                            <p class="noindent">
+                                <span class="normal-bold">
+                                    <a id="x1-130003" name="x1-130003"> For Decarbonization Study (json) </a>
+                                </span>
+                            </p>
+                            <p class="noindent">Imports a Decarbonization Study project defined as JSON.</p>
+                            <p>The user has to choose a .json-file that was generated by another tool such as the SIDI
+                                data collector. This file-based interface to ISED is able to import: </p>
+                            <ul>
+                                <li>Loads</li>
+                                <li>Assets for the Reference System</li>
+                                <li>Assets for Opportunities</li>
+                                <li>Timeseries</li>
+                                <li>Fuels</li>
+                                <li>Project Data</li>
+                            </ul>
+                            <p class="noindent">All load and asset types that are available in Decarbonization Study can
+                                be extracted from JSON. Please not that the following data can currently not be
+                                described as JSON:</p>
+                            <ul>
+                                <li>Decarbonization Study simulation settings</li>
+                                <li>Demand Charges</li>
+                            </ul>
+                            <p class="noindent"> A detailed description of the JSON import interface as well as an
+                                example file can be found <a
+                                    href="https://code.siemens.com/mch1422a/ISED_Release_and_Documentation/-/tree/master/PSS_DE/2_Documentation/2-6_Import_and_export/2-6-1_Project_setup(JSON)"
+                                    target="_blank">here</a>. </p>
+                        </div>
+
+                        <h3 class="subsectionHead">
+                            <a id="x1-150001" name="x1-150001">
+                            </a>Status Bar
+                        </h3>
+                        <div>
+                            <p class="noindent">The status bar contains:</p>
+                            <ul>
+                                <li class="noindent">
+                                    <span class="normal-bold">Version number</span> When filling bug reports or giving
+                                    improvement suggestions to the support, this number should always be attached.
+                                </li>
+                                <li class="noindent">
+                                    <span class="normal-bold">webpage</span> PSS<sup
+                                        class="textsuperscript">&reg;</sup>DE Website for Siemens employees: <a
+                                        href="https://code.siemens.com/mch1422a/ISED_Release_and_Documentation"
+                                        class="url">https://code.siemens.com/mch1422a/ISED_Release_and_Documentation</a>
+										PSS<sup
+                                        class="textsuperscript">&reg;</sup>DE Website for externals employees: <a
+                                        href="https://d1yk63ddzn2sov.cloudfront.net/signin.html"
+                                        class="url">https://d1yk63ddzn2sov.cloudfront.net/signin.html</a>
+                                </li>
+                                <li class="noindent">
+                                    <span class="normal-bold">Support</span> This guides the user to report problems via
+                                    email. This button should open the default email application and an information
+                                    popup. If the default email application fails to open up, please follow the
+                                    instructions in the popup; otherwise click "OK" and close the popup.
+                                </li>
+                                <li class="noindent">
+                                    <span class="normal-bold">Progress bar</span> The progress bar shows the current
+                                    simulation progress in terms of the configurations, which were already calculated.
+                                    It does not display progress within a configuration, i.e. a project with only one
+                                    configuration will go immediately from 0/1 to 1/1.
+                                </li>
+                            </ul>
+                            <div class="figure">
+                                <a id="x1-1500110" name="x1-1500110">
+                                </a>
+                                <img src="StatusBar.png" />
+                                <div class="caption">Status Bar</div>
+                            </div>
+                        </div>
+
+		<h2 class="sectionHead" id="x1-Equipment_ui">User Interface Basics</h2>
+		<div>
+			<h3 class="subsectionHead"><a id="x1-Equipmentassetlibrary" name="x1-Equipmentassetlibrary"></a>
+				Asset Library</h3>
+			<div>
+				<div class="figure">
+					<a id="x1-530012" name="x1-530012">
+					</a>
+					<img src="image11.png" />
+					<div class="caption">Asset Library Section</div>
+				</div>
+				<p class="noindent">In the Asset Library section, there are two buttons:</p>
+				<div class="content">
+					<ul>
+						<li class="noindent">
+							<span class="normal-bold">Add asset...</span> Allows a user to load a asset from
+							file.
+						</li>
+						<li class="noindent">
+							<span class="normal-bold">Remove</span> Removes an asset from the library in the
+							current
+							session.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+                <h2 class="sectionHead">
+                    <a id="x1-Hydro" name="x1-Hydro">
+                    </a>Hydroelectric
+                </h2>
+ 
+                        <h3 class="subsectionHead">
+                            <a id="x1-TerminologyHydro" name="x1-TerminologyHydro">
+                            </a>Hydroelectric Terminology
+                        </h3>
+                    <div>
+                        <div class="figure">
+                            <a id="x1-33501147" name="x1-33501147">
+                            </a>
+                            <img
+                                src="Schematic hydroelectric with its elementary constituents and flow directions.png" />
+                            <div class="caption">Schematic Hydroelectric with Its Elementary Constituents and Flow
+                                Directions
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="noindent"> The height difference between the upper reservoir and the water outlet
+                                is
+                                called the head. Gross head is the height difference between the upper and lower
+                                reservoir water
+                                surfaces. Net head is the gross head reduced by the head loss occurring in the penstocks
+                                and
+                                headrace tunnel due to friction effects. </p>
+                            <p class="noindent"> A penstock is a pipe used to transport water from the upper reservoir
+                                to the
+                                turbine. </p>
+                            <figure class=note-highlight>
+                                <span class="normal-bold">Note:</span> The penstock is normally constructed at an angle,
+                                so it
+                                is longer than the head.
+                            </figure>
+                            <p class="noindent"> A headrace might be needed to transport energy in a horizontal
+                                direction from
+                                the upper reservoir to the penstock inlet. </p>
+                            <p class="noindent"> A hydro-turbine does not have a direct relationship between power and
+                                water
+                                flow (e.g. it is not like a heat balance table for a gas turbine). Instead a hill chart
+                                is used
+                                to represent the relation between water flow rate and mechanical power for varying
+                                generator
+                                rotational speed at a certain guide vane opening angles. The hill chart contains
+                                experimental
+                                data obtained by the turbine manufacturer. The sizing algorithm based upon these hill
+                                charts is
+                                dependent upon some scaling factors and some discrete parameters (for example the number
+                                of pole
+                                pairs) it is therefore not always possible to exactly meet a desired rated power. The
+                                closest
+                                value that can be achieved is instead used within the model. The rationale for choosing
+                                this
+                                sizing algorithm is to ensure that the calculation of losses during operation is
+                                accurate. </p>
+                        </div>
+
+                        <div class="figure">
+                            <a id="x1-33501147tt" name="x1-33501147tt">
+                            </a>
+                            <p class="noindent">
+                                <img src="HydroelectricLibraryValidityRanges.png" />
+                            </p>
+                            <div class="caption">Head <span
+                                    style="color:rgb(84, 159, 184);font-weight: bold;">(M)</span> vs Power
+                                (MW)
+                                for
+                                hydroelectric assets</div>
+                        </div>
+                        <div class="content">
+                            <p class="noindent"> As shown in figure above, the 3 main types of hydroelectric turbines
+                                (Kaplan,
+                                Francis, Pelton) are modeled. All of them can be used for the conventional hydroelectric
+                                and the
+                                Francis turbines are also used for the pumped hydroelectric as PumpTurbines. All
+                                turbines are
+                                capable of converting the flow of water down an incline into rotational energy (which
+                                can then
+                                be converted into electrical power with a generator), only a PumpTurbine is capable of
+                                running
+                                <q>backwards</q> and pumping the water back up the incline.
+                            </p>
+                            <p class="noindent"> Turbines are defined by a range of parameters, as described in the
+                                following
+                                sections, but non-specialists only need to consider a few key important parameters early
+                                in the
+                                sizing process (listed in next section: Simple Setup). Each turbine is defined by its
+                                <q> Best
+                                    Efficiency Point (BEP) </q>, a point at which the turbine has been <q>rated</q> by
+                                the
+                                manufacturer, and is guaranteed to meet a given performance. This BEP defines the
+                                <q>Head at
+                                    rated point for turbine</q> and <q>Rated power per turbine</q>. For a PumpTurbine, a
+                                second
+                                BEP is included for the reverse direction. This is defined by the <q>Head at rated point
+                                    for
+                                    pump</q> and <q> Rated Power per pump </q>.
+                            </p>
+                            <p class="noindent"> In the figure above, the general validity range for head versus power
+                                is shown
+                                for each turbine. Note that the borders drawn are only meant to be indicative for the
+                                early
+                                design process, and are not <q>hard-constraints.</q> For example, in the asset
+                                Kaplan_5-20m_1-10MW, a minimum and maximum head of 5 and 20 meters correspond to a
+                                minimum and
+                                maximum power of 1 and 10 megawatts. However, the asset may be capable of producing
+                                slightly
+                                more than 10MW at 20 meters head depending on the exact project layout, or it may be so
+                                that
+                                even 10 MW is not quite achievable. </p>
+                        </div>
+                        <p>
+                            <span class="normal-bold">Simple Setup</span>
+                        </p>
+                        <p class="noindent"> After selecting a turbine from the library with the correct head and power,
+                            a user
+                            must define the following parameters: </p>
+                        <ul>
+                            <li>1. Head at rated point for turbine</li>
+                            <li>2. Minimum/maximum upper reservoir level in meters above sea level</li>
+                            <li> 3. Minimum/maximum lower reservoir level in meters above sea level (for conventional
+                                hydroelectric the difference can be 0m) </li>
+                            <li>4. Length of penstocks</li>
+                            <li>5. Length of headrace tunnel (this can be 0m)</li>
+                            <li>6. Rated power for each turbine</li>
+                            <li>7. Number of penstocks</li>
+                            <li>8. Number of turbines per penstocks</li>
+                        </ul>
+                        <p class="noindent"> When the project is saved, if the diameter for the headrace and penstocks
+                            are not
+                            suitable, then the user will receive a popup with a suggestion for minimum/maximum diameter
+                            of
+                            penstocks. The user should set the diameter value between the suggested minimum and maximum.
+                        </p>
+                    </div>
+
+                    <h3 class="subsectionHead">
+                        <a id="x1-convHydro" name="x1-convHydro">
+                        </a>Conventional Hydroelectric
+                    </h3>
+                    <div>
+                        <div class="figure">
+                            <a id="x1-33500147" name="x1-33500147">
+                            </a>
+                            <img src="himage107.jpg" />
+                            <div class="caption">Conventional Hydroelectric in Topology View</div>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3360004" name="x1-3360004">
+                            </a>Overview - "What is this asset"
+                        </h4>
+                        <div class="content"> Conventional hydroelectric power uses the potential height energy of water
+                            to
+                            generate electricity. Water is fed from a storage reservoir to a water turbine that turns an
+                            electrical generator. The amount of energy produced is calculated from the height difference
+                            between
+                            the storage reservoir and the water outlet, and the amount of water that flows, and the
+                            efficiency
+                            of the turbine and generator. </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3370004" name="x1-3370004">
+                            </a>Library Assets
+                        </h4>
+                        <div class="content">
+                            <p class="noindent">There are five types of library elements for the Conventional
+                                Hydroelectric</p>
+                            <ul>
+                                <li>Francis_300-700m_50-750MW</li>
+                                <li>Francis_70-300m_10-300MW</li>
+                                <li>Francis_60-70m_2-100MW</li>
+                                <!-- <li>Pelton_700-1000m</li> -->
+                                <!-- <li>Pelton_1000-1500m</li> -->
+                                <li>Kaplan_15-50m_10-50MW</li>
+                                <li>Kaplan_5-20m_1-10MW</li>
+                            </ul>
+                            <p class="noindent"> The choice of turbine is essentially determined by the
+                                project<sup>&prime;</sup>s head as shown in the following diagram. A model has been
+                                provided for
+                                the Francis turbine as this covers the expected range of DES projects. If PSS
+                                <sup>&reg;</sup>DE
+                                warns that the turbine type is not appropriate please contact PSS<sup>&reg;</sup>DE
+                                support.
+                            </p>
+                            <p class="noindent">
+                                <img src="Application range of conventional hydroelectric.jpg" />
+                            </p>
+                            <div class="caption"> Application Range of Hydroelectric Turbine [Giesecke, J. et al.
+                                (2005):
+                                Wasserkraftanlagen, 5. Aufl., Heidelberg: Springer] </div>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3380004" name="x1-3380004">
+                            </a>Parameters - by category
+                        </h4>
+                        <div class="content">
+                            <p class="noindent">
+                                <span class="normal-bold">Economics</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>Price matrix</dt>
+                                <dd>
+                                    <p class="tight"> See Price Matrix under "Special Parameter Types". </p>
+                                </dd>
+                                <dt>Construction cost per meter penstock [EUR/m]</dt>
+                                <dd>Civil cost per meter penstock.</dd>
+                                <dt>Other Construction cost [EUR]</dt>
+                                <dd> Civil cost that includes for example the cost for building a dam, machine house,
+                                    etc. If no
+                                    other information is available, then a rule of thumb is to use 8 x the capital cost.
+                                </dd>
+                                <dt>Renewable incentive [EUR/kWh]</dt>
+                                <dd> Economic incentive for the energy produced by the hydroelectric, in case it is
+                                    considered
+                                    renewable. </dd>
+                                <dt>Reactive Power Generation/Compensation [EUR/h]</dt>
+                                <dd>Hourly revenue from reactive power generation and compensation.</dd>
+                                <dt>Synchronized condenser mode [EUR/h]</dt>
+                                <dd>Hourly revenue from a turbine running in synchronized condenser mode.</dd>
+                                <dt>Number of running synchronized condenser machines [-]</dt>
+                                <dd>Number of turbines running in synchronized condenser mode.</dd>
+                                <dt>Losses in synchronized condenser mode [% of rated power]</dt>
+                                <dd>Percentage losses while turbines running in synchronized condenser mode.</dd>
+                                <!-- <dt>Charging incentive [EUR/kWh]</dt> -->
+                                <!-- <dd>The upper reservoir increases volume by water being pumped from the lower to the upper reservoir -->
+                                <!-- only when power is available at cost below the value of the charging incentive. For further information see also <a href="#x1-3971006">here</a>. </dd> -->
+                            </dl>
+                            <p class="noindent">
+                                <span class="normal-bold">Reservoir</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold">Area of upper reservoir [m<span>&#178;</span>]</span>
+                                </dt>
+                                <dd> Surface area of upper reservoir assuming the volumetric shape of the reservoir
+                                    being
+                                    cylindric. </dd>
+                                <dt>
+                                    <span class="normal-bold">Initial water level of the upper reservoir [m]</span>
+                                </dt>
+                                <dd>The initial water level of the upper reservoir.</dd>
+                                <dt>
+                                    <span class="normal-bold">Inflow to upper reservoir [m<span>&#179;</span>/s]</span>
+                                </dt>
+                                <dd>Inflow from a river or rainfall to the upper reservoir.</dd>
+                                <dt>
+                                    <span class="normal-bold">Maximum water level of upper reservoir [m]</span>
+                                </dt>
+                                <dd>Maximum water level of the upper reservoir that must not be exceeded.</dd>
+                                <dt>
+                                    <span class="normal-bold">Minimum water level of upper reservoir [m]</span>
+                                </dt>
+                                <dd>Minimum water level of the upper reservoir that must not be fallen below.</dd>
+                                <dt>
+                                    <span class="normal-bold">Area of lower reservoir [m<span>&#178;</span>]</span>
+                                </dt>
+                                <dd> Surface area of lower reservoir assuming the volumetric shape of the reservoir
+                                    being
+                                    cylindric </dd>
+                                <dt>
+                                    <span class="normal-bold">Initial water level of lower reservoir [m]</span>
+                                </dt>
+                                <dd>The initial water level of the lower reservoir.</dd>
+                                <dt>
+                                    <span class="normal-bold">Inflow to lower reservoir [m<span>&#179;</span>/s]</span>
+                                </dt>
+                                <dd>Inflow from a river or rainfall to the lower reservoir.</dd>
+                                <dt>
+                                    <span class="normal-bold">Evaporation from lower reservoir
+                                        [m<span>&#179;</span>/s]</span>
+                                </dt>
+                                <dd>Evaporation at the surface of the lower reservoir.</dd>
+                                <dt>
+                                    <span class="normal-bold">Maximum water level of lower reservoir [m]</span>
+                                </dt>
+                                <dd>Maximum water level of the upper reservoir that must not be exceeded.</dd>
+                                <dt>
+                                    <span class="normal-bold">Minimum water level of lower reservoir [m]</span>
+                                </dt>
+                                <dd>Minimum water level of the lower reservoir that must not be fallen below.</dd>
+                            </dl>
+                            <p class="noindent">
+                                <span class="normal-bold">Hydro plant</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold">Diameter of headrace tunnel [m]</span>
+                                </dt>
+                                <dd>Diameter of the headrace tunnel</dd>
+                                <dt>
+                                    <span class="normal-bold">Length of headrace tunnel [m]</span>
+                                </dt>
+                                <dd>Length of the headrace tunnel</dd>
+                                <dt>
+                                    <span class="normal-bold">Roughness of headrace tunnel wall material [mm]</span>
+                                </dt>
+                                <dd> Unlined/Shotcrete Rock: 90 (shotcrete) - 600 (unlined)</dd>
+                                <dd> Concrete: 0.8 - 3.0</dd>
+                                <dd> Steel: ~ 0.08</dd>
+                                <dd> GRP/PE: ~ 0.04</dd>
+                                <dd> Other: manually</dd>
+                                <dt>
+                                    <span class="normal-bold">Diameter of penstock [m]</span>
+                                </dt>
+                                <dd> Diameter of one penstock</dd>
+                                <dt>
+                                    <span class="normal-bold">Length of penstock [m]</span>
+                                </dt>
+                                <dd> Length of one penstock</dd>
+                                <dt>
+                                    <span class="normal-bold">Roughness of penstock wall material [mm]</span>
+                                </dt>
+                                <dd> Unlined/Shotcrete Rock: 90 (shotcrete) - 600 (unlined)</dd>
+                                <dd> Concrete: 0.8 - 3.0</dd>
+                                <dd> Steel: ~ 0.08</dd>
+                                <dd> GRP/PE: ~ 0.04</dd>
+                                <dd> Other: manually</dd>
+                                <dt>
+                                    <span class="normal-bold">Number of individual penstocks [-]</span>
+                                </dt>
+                                <dd> Number of penstocks</dd>
+                                <dt>
+                                    <span class="normal-bold">Number of turbines per individual penstock [-]</span>
+                                </dt>
+                                <dd> Number of rotating machines installed at the bottom of a penstock.</dd>
+                                <dt>
+                                    <span class="normal-bold">Efficiency scaling factor [-]</span>
+                                </dt>
+                                <dd> Scaling factor to customize the total efficiency of the plant.</dd>
+                                <dt>
+                                    <span class="normal-bold">generator efficiency [-]</span>
+                                </dt>
+                                <dd> Ratio between electrical and mechanical power at generator shaft.</dd>
+                                <dt>
+                                    <span class="normal-bold">turbine efficiency [-]</span>
+                                </dt>
+                                <dd> Efficiency of one turbine</dd>
+                                <dt>
+                                    <span class="normal-bold">Rated power per turbine [kW]</span>
+                                </dt>
+                                <dd> Rated power of one turbine</dd>
+                                <dt>
+                                    <span class="normal-bold">Head at rated point for turbine [m]</span>
+                                </dt>
+                                <dd> The head at which the turbine rated power is reached.</dd>
+                                <dt>
+                                    <span class="normal-bold">Minimum flow per turbine [%]</span>
+                                </dt>
+                                <dd> Minimum percentage of flow rate for generating. Set to 40% by default.</dd>
+                                <dt>
+                                    <span class="normal-bold">Ramp rate of turbine in percent of prime power
+                                        [%/s]</span>
+                                </dt>
+                                <dd> Turbines can ramp up instantaneously. Set to 1 by default.</dd>
+                                <dt>
+                                    <span class="normal-bold">pump efficiency [-]</span>
+                                </dt>
+                                <dd> Efficiency of one pump</dd>
+                                <dt>
+                                    <span class="normal-bold">Rated power per pump [kW]</span>
+                                </dt>
+                                <dd> Rated power of one pump.</dd>
+                                <dt>
+                                    <span class="normal-bold">Head at rated point for pump [m]</span>
+                                </dt>
+                                <dd> The head at which the pump rated power is reached.</dd>
+                                <dt>
+                                    <span class="normal-bold">Minimum flow per pump [%]</span>
+                                </dt>
+                                <dd> Minimum percentage of flow rate for pumping. Set to 40% by default.</dd>
+                                <dt>
+                                    <span class="normal-bold">Ramp rate of pump in percent of prime power [%/s]</span>
+                                </dt>
+                                <dd> Ramp rate of pump in percent of prime power.</dd>
+                            </dl>
+                            <p class="noindent">
+
+                                <span class="normal-bold">Stability (Grid, OR)</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold">Line Frequency</span>
+                                </dt>
+                                <dd> Frequency of the grid depending of the location. In large parts of the world this
+                                    is 50 Hz,
+                                    in the US and some parts of Asia this is 60 Hz </dd>
+                                <dt>
+                                    <span class="normal-bold">Grid forming factor [pu]</span>
+                                </dt>
+                                <dd> The relative amount of load the hydroelectric can sustain in terms of grid
+                                    stability. The
+                                    value is given as a factor of the maximal power of the hydroelectric. 2 is usually
+                                    considered conservative and 4 aggressive. </dd>
+                                <dt>
+                                    <span class="normal-bold">Short circuit current [A]</span>
+                                </dt>
+                                <dd>Amount of short circuit current that can supplied by the genset</dd>
+                                <dt>
+                                    <span class="normal-bold">Failure fraction</span>
+                                </dt>
+                                <dd>The fraction in per unit in which the Hydroelectric fails, usually 1.</dd>
+                            </dl>
+                            <p class="noindent">
+                                <span class="normal-bold">Losses</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold">Operational losses [kW]</span>
+                                </dt>
+                                <dd>Losses incurred during use. The value is absolute and does not scale with the genset
+                                    size
+                                </dd>
+                                <dt>
+                                    <span class="normal-bold">Hour of day losses [kW]</span>
+                                </dt>
+                                <dd>Losses as function over time in a day</dd>
+                                <dt>
+                                    <span class="normal-bold">Permanent losses [kW]</span>
+                                </dt>
+                                <dd>Losses are absolute and not scaled with size.</dd>
+                            </dl>
+                            <p class="noindent">
+                                <span class="normal-bold">Time</span>
+                            </p>
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold">Lifetime [h]</span>
+                                </dt>
+                                <dd>Lifetime, i.e. the time between replacements in years.</dd>
+                                <dt>
+                                    <span class="normal-bold">Installation delay [y]</span>
+                                </dt>
+                                <dd> The time delay (in years) after simulation start at which the asset is installed.
+                                    CAPEX is
+                                    booked and OPEX start after this delay. A delay of 5 years means that the unit
+                                    starts
+                                    producing at the beginning of year 6. </dd>
+                                <dt>
+                                    <span class="normal-bold">Maintenance Schedule</span>
+                                </dt>
+                                <dd> The maintenance schedule defines how many rotating machines are allowed (or
+                                    required) to
+                                    run at a given time. </dd>
+                                <dt>
+                                    <span class="normal-bold">Replacement Strategy</span>
+                                </dt>
+                                <dd> See Replacement Strategy under "Special Parameter Types".</dd>
+                            </dl>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3390004" name="x1-3390004">
+                            </a>Explanation for Hydroelectric Model
+                        </h4>
+                        <div class="content">
+                            <p class="noindent">The model includes the following features:</p>
+                            <ul>
+                                <li>User defined water inflow and evaporation to the upper and lower reservoir</li>
+                                <li> Reservoir areas and minimum and maximum limits for its water level. Note that the
+                                    geometry
+                                    of a reservoir has been simplified to a cylinder so that the water lever is linear
+                                    in
+                                    relation to how full the reservoir is. </li>
+                                <li> The generated hydroelectric power is depending on the gross head, head loss
+                                    occurring in
+                                    headrace tunnel and penstock, turbine and generator efficiency </li>
+                                <li> The stored energy for pumped hydro is dependent on the gross head, head loss
+                                    occurring in
+                                    headrace tunnel and penstock, pump turbine and generator efficiency operating in
+                                    reverse
+                                    mode, or pump efficiency </li>
+                                <li> Losses dependent on headrace tunnel and penstock material type and geometry
+                                    (diameter and
+                                    length) </li>
+                                <li>Capital costs associated with:</li>
+                                <li>general construction e.g. dams, machine houses, etc.; </li>
+                                <li>penstock<span style="color:rgb(0, 153, 153);font-weight: bold;">(S)</span> -
+                                    dependent on length
+                                    and
+                                    construction type; and </li>
+                                <li> electricity generation equipment e.g. water turbines, generator, switch gear,
+                                    transformers,
+                                    control equipment. </li>
+                                <li>Reactive power mode and synchronous condenser mode</li>
+                            </ul>
+                            <p class="noindent">
+                                <span class="normal-bold">Modelling concept:</span>
+                            </p>
+                            <ul>
+                                <li> A single headrace tunnel can be used to bridge the horizontal distance between the
+                                    reservoir and the penstock<span
+                                        style="color:rgb(0, 153, 153);font-weight: bold;">(S)</span>
+                                </li>
+                                <li>One or multiple penstocks can be configured</li>
+                                <li>Each penstock can have one or multiple Francis turbines connected to it</li>
+                            </ul>
+                            <p class="noindent">
+                                <img src="Reduced model of a hydroelectric as general pipe configuration.png" />
+                            </p>
+                            <div class="caption"> Reduced Model of a Hydroelectric as General Pipe Configuration (Q =
+                                flow, K =
+                                resistance coefficient, G = Group of water turbines) </div>
+                            <p class="noindent"> For the general system configuration, the model in PSS
+                                <sup>&reg;</sup>DE
+                                assumes
+                            </p>
+                            <ul>
+                                <li>one common headrace tunnel HTC</li>
+                                <li>multiple (in this case 3) individual penstocks PSI with identical resistance
+                                    coefficient KI
+                                </li>
+                                <li> Groups of rotating machines (turbine and generator) G1, G2, G3. A group can have 1
+                                    or more
+                                    turbines; note the assumption is made that all groups must have the same number of
+                                    turbines.
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3490004" name="x1-3490004">
+                            </a>Setup a Hydroelectric
+                        </h4>
+                        <div class="content">
+                            <p class="noindent"> The parameters for a hydroelectric system are very project specific.
+                                PSS
+                                <sup>&reg;</sup>DE has been developed to allow a simple configuration when little
+                                technical
+                                information is known. More detailed modelling is possible if the appropriate input data
+                                is
+                                available. Details on advanced setup for hydroelectric model can be find <a
+                                    href="https://code.siemens.com/mch1422a/ISED_Release_and_Documentation/blob/master/PSS_DE/5_Siemens_DES_portfolio/5-6_Hydroelectric/Hydroelectric_advanced_setup.pdf"
+                                    target="_blank">here</a>.
+                            </p>
+                            <p>
+                                <span class="normal-bold">Using a Project Specific Hill Chart</span>
+                            </p>
+                            <p class="noindent"> If a project specific hill chart is available, then a customized
+                                hydroelectric
+                                asset can be created. The data must be provided in the format defined in <a
+                                    href="https://code.siemens.com/mch1422a/ISED_Release_and_Documentation/blob/master/PSS_DE/3_Helpful_Tools/3-3_Other_tools/Hydroelectric_Pipe_sizing_tool.xlsx"
+                                    target="_blank">link</a>. Please contact the <a href="mailto:pss.de@siemens.com">
+                                    support
+                                    desk </a> to for further information. </p>
+                        </div>
+
+
+                    </div>
+                    <h3 class="subsectionHead">
+                        <a id="x1-pumpHydro" name="x1-pumpHydro">
+                        </a>Pumped Hydroelectric
+                    </h3>
+                    <div>
+                        <div class="figure">
+                            <a id="x1-43500147" name="x1-43500147">
+                            </a>
+                            <p class="noindent">
+                                <img src="himage108.jpg" />
+                            </p>
+                            <div class="caption">Pumped Hydroelectric in Topology View</div>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3360004" name="x1-3360004">
+                            </a>Overview - "What is this asset"
+                        </h4>
+                        <div class="content"> In systems with suitable equipment, a second lower reservoir can be used
+                            at the
+                            water outlet of the turbine to store water. In addition to generating electricity, the flow
+                            of water
+                            can be reversed so that energy can be stored by pumping water back up to the upper storage
+                            reservoir. In this case either the same turbine might be used in reverse with a different
+                            efficiency, or a separate pump might be needed. </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3370004" name="x1-3370004">
+                            </a>Library Assets
+                        </h4>
+                        <div class="content">
+                            <p class="noindent">There are one type of library element for the Pumped Hydroelectric</p>
+                            <ul>
+                                <li>FrancisPumpTurbine_70-300m</li>
+                            </ul>
+                            <p class="noindent"> A model has been provided for the Francis turbine as this covers the
+                                expected
+                                range of DES projects. If PSS<sup>&reg;</sup>DE warns that the turbine type is not
+                                appropriate
+                                please contact PSS<sup>&reg;</sup>DE support. </p>
+                        </div>
+                        <h4 class="subsubsectionHead">
+                            <a id="x1-3380004" name="x1-3380004">
+                            </a>Parameters - by category
+                        </h4>
+                        <div class="content">
+                            <p class="noindent">
+                                <span class="normal-bold">Economics</span>
+                            </p>
+                            <dl>
+                                <dt>Charging incentive [EUR/kWh]</dt>
+                                <dd> The upper reservoir increases volume by water being pumped from the lower to the
+                                    upper
+                                    reservoir only when power is available at cost below the value of the charging
+                                    incentive.
+                                    For further information see also <a href="#x1-3971006">here</a>. </dd>
+                            </dl>
+                            <a id="x1-1800009.4.2" name="x1-1800009.4.2">
+                            </a>
+                        </div>
+                    </div>
+
+                            <dl class="border-top border-right pr-4">
+                                <dt>
+                                    <span class="normal-bold"> Heat Balance Table for Heat Pumps</span>
+                                </dt>
+                                <dd>
+                                    <p class="noindent"> 									
+										A table defining the thermal power generated by electrical
+                                        power (and
+                                        thermal input). Each row defines a performance set point at different partial
+                                        loads. The
+                                        first column defines the amount of required input electrical power, while the
+                                        second
+                                        then defines the corresponding thermal output (Hot Water or Steam). </p>
+                                    <p> If the heat pump is not defined as a Standard Heat Pump, then there will also be
+                                        a
+                                        column for the provided cooling power of the unit or the required thermal input
+                                        (hot
+                                        water or steam). This means that as a Dual Heat Pump the unit must provide
+                                        cooling power
+                                        in order to be able to provide warming power. For Booster Heat Pumps a thermal
+                                        input
+                                        (hot water or steam) is required. See also: Heat Balance Table under "Special Parameter Types". </p>
+                                    <p> As defined in the Model section, the efficiency of a Heat Pump changes as the
+                                        cold
+                                        (source) and hot (outlet) temperatures vary. To account for this effect within
+                                        PSS
+                                        <sup>&reg;</sup>DE, an excel tool is provided at the download page under:
+                                    </p>
+                                    <p>
+                                        <span
+                                            class="noindent normal-italic">3_Helpful_Tools/3-2_Other_tools/ISED_HeatPump_ThermalEffectCalculator.xlsx</span>
+                                    </p>
+                                    <figure class="important_highlight">
+                                        <span class="normal-bold">Important:</span> The table provides 3 rows as inputs,
+                                        and an
+                                        "Off" row is included internally in the model. You should never set the first
+                                        row to
+                                        zero. This can lead to strange effects in the model. If you need less points,
+                                        then
+                                        duplicate the last rows.
+                                    </figure>
+                                </dd>
+                            </dl>
+
+                    <p class="noindent">
+                        <span class="normal-bold">Simulate custom period</span> A simulation for a custom period of time
+                        is carried out. In "Project Startyear" one can pick a date since when this project is running.
+                        Installation occurs and capital costs are incurred. In "Begin" and "End" one can select the
+                        start and end date of the simulation. The begin date may not be before the project start year.
+                        Both project start year and begin date must be before the end date. The end date may not be
+                        longer than the project life time.
+                    </p>
+                    <p class="noindent">
+                        <img src="image99.png" />
+                    </p>
+                    <p class="noindent">
+                        <span class="normal-bold">Create reference configuration</span> If selected, a reference
+                        configuration for post processing is generated by stripping all assets labeled as non-(prior)-
+                        existing from the configuration. Dispatcher used for reference configuration is shown on the
+                        right side.
+                    </p>
+                    <p class="noindent">
+                        <span class="normal-bold">Max. number of CPU cores to use</span> This slider determines how many
+                        configurations are calculated in parallel.
+                    </p>
+                    <figure class=note-highlight>
+                        <span class="normal-bold">Note:</span> If you want to execute PSS<sup>&reg;</sup>DE in the
+                        background and still use other CPU-intensive applications such as Excel, it might be
+                        advantageous not to use the maximal number.
+                    </figure>
+
+                <h2 class="sectionHead">
+                    <a id="x1-30001" name="x1-30001">
+                    </a>Export
+                </h2>
+                <h3 class="subsectionHead"> To financial tool
+                <a id="x1-3330009" name="x1-3330009">
+                </a>
+                </h3>
+                <p class="noindent"> Exports an input file for the Lahmeyer financial analysis tool for the selected
+                    configuration. The Lahmeyer tool is used for a detailed analysis of a single configuration. </p>
+
+                <!--<h3 class="subsectionHead">
+                    <a id="x1-3330009" name="x1-3330009">
+                    </a>To DEOP
+                </h3>
+                <div class="figure">
+                    <a id="x1-3330012" name="x1-3330012">
+                    </a>
+                    <img src="image100.png" />
+                    <div class="caption">To DEOP</div>
+                </div>
+                <p class="noindent"> Exports certain KPIs to DEOP. The exported KPIs can be stored in .csv or .xml
+                    format. KPIs are: </p>
+                <ul>
+                    <li>Total energy production</li>
+                    <li>Total Net Port Throughput</li>
+                    <li>Total Primary Load Consumption</li>
+                    <li>Total Thermal Load Consumption</li>
+                    <li>Specific fuel consumption</li>
+                    <li>Deferrable Load Energy Consumption</li>
+                    <li>NaturalGas consumption</li>
+                    <li>Fuel consumption</li>
+                    <li>Renewable Energy Share</li>
+                    <li>Renewable exported energy</li>
+                    <li>Net Port Throughput</li>
+                    <li>Steam Output Set Point</li>
+                    <li>Electric Output Set Point</li>
+                    <li>ThermalPort Set Point</li>
+                    <li>Electrical production</li>
+                    <li>Hours of operation</li>
+                    <li>Available energy</li>
+                    <li>PV energy share</li>
+                    <li>Unused energy</li>
+                    <li>Battery energy throughput</li>
+                    <li>Exported Energy To Grid</li>
+                    <li>Imported Energy From Grid</li>
+                    <li>Wind energy share</li>
+                </ul>-->
+                <h3 class="subsectionHead">
+                    <a id="x1-3330011" name="x1-3330011">
+                    </a>For external tools (json)
+                </h3>
+                <p class="noindent"> This export option is available for dispatch optimization as well as for Decarbonization Study
+					and writes the simulation results to a .json file. This file can be then imported to
+                    other tools such as the SIDI Data Collector for visualization and analysis of the data. The user can
+                    select the configurations (dispatch optimization) or scenarios (Decarbonization Study) to be exported.
+                </p>
+                <div class="figure">
+                    <a id="x1-3330013" name="x1-3330013">
+                    </a>
+                    <img src="JsonExport_Scenarios.png" />
+                    <div class="caption">Select scenarios to be exported</div>
+                </div>
+                <p class="noindent"> The exported file contains the output for all selected configurations/scenarios.
+                    For each scenario the scenario ID, scenario name and project lifetime are given and the scenarios
+                    are divided into three parts: </p>
+                <ul>
+                    <li>System KPIs</li>
+                    <li>Asset KPIs</li>
+                    <li>Asset Sizing (only for Decarbonization Study)</li>
+                </ul>
+                <div class="figure">
+                    <a id="x1-3330014" name="x1-3330014">
+                    </a>
+                    <img src="JsonExport_View.png" />
+                    <div class="caption">Structure of JSON export from Decarbonization Study</div>
+                </div>
+                <p class="noindent"> The <span class="normal-bold">system KPIs</span> include the total values for: </p>
+                <ul>
+                    <li>Project TOTEX - Total system cost over project lifetime</li>
+                    <li>Project CAPEX - Initial system investment cost</li>
+                    <li>Project OPEX - Total system operating cost over project lifetime (including O&M, fuel, import
+                        costs...)</li>
+                    <li>Annual Operating Costs - The total system operating cost for the first year</li>
+                    <li>LCoE (Electricity) - The levelized cost of electricity is given by the discounted relative cost
+                        of production of electricity. </li>
+                    <li>Project Carbon emissions - Total tons of CO2 produced over project lifetime</li>
+                </ul>
+                <p class="noindent"> The <span class="normal-bold">asset KPIs</span> include the monthly, yearly and
+                    total values for every asset with a rated size > 0: </p>
+                <p class="noindent"> A detailed description of the JSON export interface as well as an examplary file
+                    can be found <a
+                        href="https://code.siemens.com/mch1422a/ISED_Release_and_Documentation/-/tree/master/PSS_DE/2_Documentation/2-6_Import_and_export/2-6-1_Project_setup(JSON)"
+                        target="_blank">here</a>. </p>
+                <ul>
+                    <li>Cash flow</li>
+                    <li>Technical KPIs</li>
+                </ul>
+                <p class="noindent"> Every KPI is described by its: </p>
+                <ul>
+                    <li>name</li>
+                    <li>kpiClusterType</li>
+                    <li>kpiType</li>
+                    <li>kpiUnit</li>
+                    <li>array of values</li>
+                </ul>
+                <p class="noindent"> In the <span class="normal-bold">asset sizing</span> section all assets and loads
+                    of the project are specified by all parameters that are available in Decarbonization Study. This
+                    section is only contained if the export is from Decarbonization Study. </p>
+        </div>
+			<h2>
+				<a id="x1-FinToolReportGen" name="x1-FinToolReportGen">
+				</a>Report Generation
+			</h2>
+			<div>
+				<p>A report generation function is available from the icon on the left toolbar. </p>
+				<div class="figure">
+					<a id="x1-1600111" name="x1-1600111">
+					</a>
+					<img src="FinTool20.png" />
+					<div class="caption">Toolbar with button to start report generation</div>
+				</div>
+				<p>The report generation populates a word template with project data. This template has a
+					“superstructure” of elements that can be automatically generated. The user can customize which
+					of these are included in the report using the wizard. It is also able to select which
+					configurations are shown in the analysis. </p>
+				<p> The report generation takes several minutes, the report will automatically open in MSWord, and
+					be saved in the same location as the sproject file. This is a standard MSWord document that can
+					be modified as needed. Areas that the user needs to change can be easily found by searching for
+					“xxx”. The links in the document need to be manually updated, if the entire content is selected
+					(e.g. “Ctrl+A”), then the “F9” key updates the field. A prompt window will open, the user should
+					update the entire document. </p>
+			</div>
+    </div>
+    <script type="text/javascript" src="ISED_Help.js">
+    </script>
+</body>
+
+</html>

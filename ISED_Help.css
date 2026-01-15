@@ -1,0 +1,471 @@
+ 
+/* ------------------ TEXT SETTINGS ----------------------- */
+.unset{
+	font-size: initial;
+	font-style: initial;
+	font-family: initial;
+	
+  /* color: initial; */
+  /* background: initial; */
+  /* text-decoration: initial; */
+  /* margin: initial; */
+  /* padding: initial; */
+}
+h1{
+	display: block;
+	font-size: 2em;
+	margin-block-start: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding-top: 1rem;
+	
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+/* Sub-Subsection title */
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: bold;
+	font-size: 1.13em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-decoration: underline;
+}
+
+.subsubsubsection{
+	font-weight: bold;
+}
+/* "class" attribute indicates the font */
+.normal-bold{font-weight: bold;}
+.normal-italic-bold{ font-style:italic; font-weight: bold;}
+.normal-italic{ font-style:italic}
+.small-bold{font-size:90%; font-weight: bold;}
+.small{font-size:70%;}
+.large-bold{font-size: 130%; font-weight: bold;}
+/* Table of contents on the left */
+br.narrow{margin: 0.1em;}
+.chapterToc{ font-weight:bold;}
+.chapterToc ~ .sectionToc {margin-left:2em}
+.chapterToc ~ .sectionToc ~ .subsectionToc {margin-left:5em;font-size: 18px}
+/* Used only in the "Explanation for Grid Model" part */
+.paragraphHead { margin-top:2em; font-weight: bold;}
+.underlined{	text-decoration: underline;}
+
+/*------------------- SECTION SETTINGS ---------------------*/
+
+/* <h*> is the tag for section headings */
+
+
+/* Content under sub-subsection */
+.content{
+	margin-left: 0em;
+}
+
+/*------------------ PARAGRAPH SETTINGS ----------------------*/
+
+/* <p> is the tag for paragraphs  */
+p.tight{margin-top: 0em; margin-bottom: 0em;}
+p.noindent { text-indent: 0em }
+center { margin-top:1em; margin-bottom:1em; }
+div.indent-list
+	{ text-indent: 40px }
+
+
+/*-------------------- IMAGE SETTINGS ----------------------*/
+
+/* normal figures and captions */
+div.figure img {text-align:center; max-width:60em; margin-bottom:1em; margin-top:1em; text-indent:0em;
+	box-shadow:0 0 8px #ccc;
+	margin-left: 5px;
+	
+}
+div.caption {text-indent:0;
+	 margin-left:5px; 
+	 text-align:left;
+	 margin-bottom: 1rem;
+	  white-space: nowrap;
+	  color: #545b62}
+
+
+
+
+/*-------------------- TABLE SETTINGS ----------------------*/
+
+/* Table to list definitions */
+/* #table  {border-collapse:collapse;border-spacing:0;} */
+td.term{font-weight:bold;text-align:left;vertical-align:top}
+td.explanation{text-align:left;vertical-align:top}
+/* table, th, td {border: 1px solid black;} */
+/* Table to show multi-line equations */
+.equation-multi-line{margin-left:auto; margin-right:auto; white-space: nowrap; border: none;}
+
+/*-------------------- LIST SETTINGS ----------------------*/
+
+dt{font-weight: bold;}
+
+/* ------------------- AUTO NUMBERING --------------------- */
+body{counter-reset: h1counter;}
+
+h1{counter-reset: h2counter imgcounter;}
+h2{counter-reset: h3counter;}
+h3{counter-reset: h4counter;}
+h1::before {
+	counter-increment: h1counter;
+	content: "Chapter " counter(h1counter) "\0000a0\0000a0";
+	/*counter-reset: h2counter;*/
+}
+h2::before {
+	counter-increment: h2counter;
+	content: counter(h1counter) "." counter(h2counter) "\0000a0\0000a0";
+	counter-reset: h3counter;
+}
+h3::before {
+	counter-increment: h3counter;
+	content: counter(h1counter) "." counter(h2counter) "." counter(h3counter)"\0000a0\0000a0";
+	counter-reset: h4counter;
+}
+/* h4::before {
+	counter-increment: h4counter;
+	content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\0000a0\0000a0";
+} */
+div.caption::before{
+	counter-increment: imgcounter;
+	content: "Figure " counter(h1counter) "." counter(imgcounter)":\0000a0\0000a0";
+	font-weight: bold;
+}
+
+/*-------------------- PAGE SETTINGS ----------------------*/
+
+body{margin: 0;
+	background-color:#fff;
+	color: #212538;
+	display: block;}
+
+
+p.title .navbar-brand{
+	margin-right:0;	 
+	font-size: 18px;
+}
+p.padding-title{
+	padding-left:20px;
+}
+p.title .navbar-brand.space{
+	margin-right:1rem; 
+}
+span.title{
+	color: #fff;	
+	background-color: #313131!important;
+	padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.wrapper{
+  /* Use flexbox */
+  /* display: flex; */
+  /* top:50px; */
+  height: calc(100% - 50px);
+  width: 100%;
+	position: fixed;
+	display: flex;
+	align-items: stretch;
+
+}
+div.left {
+	left: 0;
+	float: left;
+    overflow: auto;
+    background-color: #f5f5f5;
+    position: fixed;
+	  box-sizing: inherit; 
+	height: calc(100% - 50px);
+	top:50px;
+	max-width: 30%;
+	width: 18%;
+	padding-right: 0px;
+	/* padding-left:20px ; */
+	/* color: #cdd9e1; */
+	/* box-sizing: border-box; */
+	/* flex: 1 1 auto; */
+}*,*:before,*:after{box-sizing:inherit}
+div.right{
+	/* padding-top:20px; */
+	padding-right: 5%;
+	left:23%;
+	right: 0;
+	margin-bottom:10%;
+	top:50px; 
+	height: calc(100% - 50px);
+	position: fixed;
+	overflow: scroll;
+	overflow-x: scroll;
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	text-align: justify;
+  text-justify: inter-word;
+}*,*:before,*:after{box-sizing:inherit}
+/* The dragable bar separating left and right */
+div.handler {
+	width: 10px;
+	padding: 0px;
+	color: white;
+	top:50px;
+	margin-left: 22%;
+	cursor: ew-resize;
+	flex: 0 0 auto;
+	height: 100%;
+}
+div.handler::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  background: #e6e6e6;
+  margin: 0 auto;
+  overflow: hidden;
+  	height: 100%;
+}
+.tableofcontents a{
+	color:#333;
+	text-decoration: none;
+}
+
+.tableofcontents span{
+	/* margin-bottom: 0.5em; */
+	padding-left:20px;
+} 
+
+
+.tableofcontents a:hover{
+	color:#009999;
+	text-decoration: none
+}
+.tableofcontents a:active{
+	color:#54caca;
+	text-decoration: none
+}
+
+
+.box-shadow {
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.form-control-dark {
+	/* color: #fff; */
+	background-color: rgba(255, 255, 255, .1);
+	border-color: rgba(255, 255, 255, .1);
+}
+.navbar .form-control {
+	padding: 1rem 1rem;
+	border-width: 0;
+	border-radius: 0;
+	/* margin-left:40%; */
+}
+
+.sidebar {
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+/* highlight color for note text (color#ebebeb) */
+.note-highlight {
+	margin-bottom: 1rem;
+	background-color: #ebebeb;
+	padding: 1.5rem;
+}
+/* highlight color for important text (color#aadede) */
+.important_highlight {
+	margin-bottom: 1rem;
+	background-color: #aadede;
+	padding: 1.5rem;
+}
+
+/* highlight color for important text (color#aadede) */
+.important_highlight_DO {
+	margin-bottom: 1rem;
+	background-color: #549fb8;
+	color: #eeeeee;
+	padding: 1.5rem;
+}
+
+/* highlight color for important text so(color#009999) */
+.important_highlight_SO {
+	margin-bottom: 1rem;
+	background-color: #009999;
+	color: #eeeeee;
+	padding: 1.5rem;
+}
+.sidebar div ul li {
+	margin-bottom: 0.5em;
+}
+
+.sidebar div ul{
+	margin-bottom: 0;
+}
+
+a[data-toggle="collapse"] {
+	position: relative;
+}
+
+.dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	color: #595959;
+
+}
+
+.sidebar div span a {
+	padding: 8px;
+	font-size: 1.1em;
+	display: block;
+}
+
+.list-group {
+	max-width: 400px;
+}
+
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: .75rem 1.25rem;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+.content ul{
+	list-style-type: circle;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+.content ul ul{
+	list-style-type: disc;
+}
+/* .content p span{
+	text-decoration: underline;
+} */
+
+.search-tool{
+	margin-bottom: 0;
+	padding: 16px;
+}
+ul li{
+		margin: 10px 0;}
+
+.no_margin{
+margin-bottom: 0px;
+}
+
+dl{
+	padding-top:5px;
+}
+
+.KPIs dl{
+	list-style-type: circle;
+	margin-top: 0px;
+	margin-bottom: 1rem;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+	padding-top: 0px;
+}
+.KPIs dl dt {
+	margin: 10px 0;
+	list-style-type: circle;
+	display: list-item;
+	box-sizing: inherit;
+}
+
+.KPIs p{
+	margin-top: 0px;
+	margin-bottom: 1rem;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	margin: 10px 0;
+	list-style-type: circle;
+	display: list-item;
+	box-sizing: inherit;
+	padding-left: 0px;
+	
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+	border-color: grey;
+	border-collapse: collapse;
+	width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+	border-color: #dee2e6;
+	font-weight: bold;
+
+}
+
+p.navbar{
+	display: flex; 
+	justify-content: space-between
+}
